@@ -1,26 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "target": "es5",            // Target ECMAScript version
+    "module": "commonjs",        // Use commonjs modules
+    "outDir": "./dist",          // Output directory for compiled JS files
+    "rootDir": "./src",          // Source directory for TypeScript files
+    "strict": true               // Enable strict mode for better type checking
   },
   "include": [
-    "src"
+    "src/**/*.ts"                // Include all .ts files in the src folder
+  ],
+  "exclude": [
+    "node_modules"               // Exclude node_modules
   ]
 }

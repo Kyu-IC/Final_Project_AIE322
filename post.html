@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotAFacebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="branding-section">
+                <div class="logo">
+                    <span class="highlight">N</span>otA<span>Facebook</span>
+                </div>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <span class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" fill="#999" viewBox="0 0 24 24">
+                <path d="M10 2a8 8 0 105.29 14.71l4.29 4.3 1.41-1.42-4.3-4.29A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" />
+              </svg>
+            </span>
+            <input type="text" class="search-bar" placeholder="Search...">
+          </div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰
+          <div class="dropdown-menu" id="dropdownMenu">
+              <ul>
+                  <!-- Profile item with image -->
+                  <li class="profile-item">
+                      <img src="path_to_user_image.jpg" alt="User Profile" class="profile-img">
+                      <span class="profile-name">Username</span>
+                  </li>
+      
+                  <!-- Non-clickable space -->
+                  <li class="menu-space"></li>
+      
+                  <!-- Other menu items -->
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Admin</a></li>
+                  <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+      </header>
+      
+      
+
+  <main class="main">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-pic"></div>
+        <p class="username">username</p>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li>Friends</li>
+          <li>Memories</li>
+          <li>Group</li>
+          <li>Events</li>
+        </ul>
+      </nav>
+      <div class="shortcut-space">Shortcut Space</div>
+    </aside>
+
+    <section class="content">
+      <div class="feed">
+        <div class="post">
+          <div class="profile-pic"></div>
+          <p>username</p>
+          <p>bla bla bla</p>
+          <div class="actions">
+            <button>Like</button>
+            <button>Comment</button>
+          </div>
+        </div>
+        <!-- Repeat .post div for more posts -->
+      </div>
+    </section>
+
+    <aside class="friends-space">
+      <p>Friends Space</p>
+    </aside>
+  </main>
+  <script src="dist/menu.js"></script>
+</body>
+</html>
